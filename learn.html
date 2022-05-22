@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Kev IP Project</title>
+        <link rel="icon" href="ip_Images/ip_hagrid.png">
+        <link type="text/css" rel="stylesheet" href="ip_CSS/CSSip.css">
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="learn.html">Learn Html</a></li>
+                <li><a href="resources.html">Resources</a></li>
+            </ul>
+        </nav>
+
+        <div id="learn">
+            <h1>Learning HTML</h1>
+
+            <h2>Introduction</h2>
+            <p>My reason for making this website for the IP project is that programming and computers are basically my interests. I wanted to intergrate my interests to the IP project and that's what I did. Below are the <b>BASICS</b> of HTML and CSS. If you want to learn more about HTML and CSS, you can go to the "Resources" tab above. This website is also <b>OPEN SOURCED</b>, so if you want to see the code, make some suggestions or point out some typos, it will be also in the "Resouces" tab.</p>
+
+            <h2>What is HTML and CSS?</h2>
+            <p>HTML stands for <b>H</b>yper<b>t</b>ext <b>M</b>arkup <b>L</b>anguage and CSS stands for <b>C</b>ascading <b>S</b>tyle<b>s</b>heet. HTML is used for constructing the skeleton of the website while its partner, CSS, helps style the website. They are both different languages but we can connect them together which I will be showing you soon. I am using the latest versions (hopefully) of <b>HTML 5</b> and <b>CSS 3</b>.</p>
+
+            <h2>Getting Started</h2>
+            <p>To get started, you will need a coding editor or an IDE (Integrated Develpement Environment, basically a coding editor). The IDE I'm using is <a href="https://code.visualstudio.com/" target="_blank">Visual Studio Code</a>, however there many other programming editors out there you can use such as <a href="https://notepad-plus-plus.org/" target="_blank">Notepad ++</a>, <a href="https://atom.io/" target="_blank">Atom</a>, etc. It's all about preference. Another thing you will need is to find the <b>TAB</b> key on your keyboard which should be above the <b>Caps Lock</b> and it should have a symbol with 2 arrows pointing at opposite directions. The <b>TAB</b> key will help you create 4 spaces without you having to press the space bar 4 times. This is called "indenting" and many programmers use it to make their code look nicer. However another reason why we use indenting is because ome programming languages such as <a href="https://www.python.org/">Python</a> which some of its functions require an indent or else it will give you an error. If you press the spacebar 4 times to indent, you are a threat to society.</p>
+
+            <h2>Making your HTML and CSS files</h2>
+            <ol>
+                <li>Make a folder on your desktop and name it "My first website" or something.</li>
+                <li>Inside that folder, make another folder and name it "CSS". If you haven't guessed already, this is where you will put your CSS script inside.</li>
+                <li>Right-click you main website folder (not the CSS folder) and click "Open with [IDE of your choice]".</li>
+                <li>Once you open your IDE, look at your file explorer (which is usually on the left, at least for me), find and click on your CSS folder and add a file there called "MyFirstCSS.css" (or name it whatever you like but keep the ".css" at the end).</li>
+                <li>Make another file called "MyFirstHTML.html" (name it whatever you like but keep the ".html" at the end) and move it outside your CSS folder.</li> 
+            </ol>
+            <p><b>You have now created a basic file path for your first website</b></p>
+
+
+            <h2>Your fist HTML script</h2>
+            <p>Firstly, you will have to open your html file with your IDE. Once you open the file type out this code <b>(DON'T FORGET TO INDENT!)</b>:</p>
+            <pre>
+                &lt;!DOCTYPE html&gt;
+                &lt;html&gt;
+                    &lt;head&gt;&lt;/head&gt;
+                    &lt;body&gt;&lt;/body&gt;
+                &lt;/html&gt;
+            </pre>
+            <p>Lets do some analysis, <code>&lt;!DOCTYPE html&gt;</code> tells the computer that we are using HTML and not some other language. The <code>&lt;head&gt;</code> tag is a tag where you put your website's data such as "metadata", "webite title", "stylesheet", etc. The <code>&lt;body&gt;</code> tag is where you put your website's content such as headings, paragraphs, etc. As you may have noticed, there are some duplicate tags but have a "/" in them. These are end tags. They are basically the "period" for HTML. It tells when the tag should stop. However there are some tags that do not need an end tag such as the doctype.
+            
+            <h3>Adding tags to the Head Tag</h3>
+            <p>Inside the <code>head</code> tag, we can add tags to link to our CSS file and make a title to our website like this:</p>
+            <pre>
+                &lt;!DOCTYPE html&gt;
+                    &lt;html&gt;
+                    <span class="codeHighlight">&lt;head&gt;
+                            &lt;title&gt;My First Webiste!&lt;/title&gt;
+                            &lt;link type="text/css" rel="stylesheet" href="[your main website folder name]/[your css file name].css"&gt;
+                        &lt;/head&gt;</span>
+                        &lt;body&gt;&lt;/body&gt;
+                &lt;/html&gt;
+            </pre>
+            <p>The <code>&lt;title&gt;</code> tag will set your website's tab to whatever you put inside the tag. The <code>&lt;link&gt;</code> tag we put helps the computer find the CSS through the file path and link it to our HTML file. This will be useful to help style our website.<b>TO VIEW YOUR WEBSITE</b>, you double-click the HTML file from your main folder and it will open the file to your default browser. The browser will not update real-time so you will have to save your code first and then refresh the page.</p>
+
+            <h3>Adding tags to the Body Tag</h3>
+            <p>Right now the website seems empty. We should add some content. Let's add a heading and a paragraph to our website:</p>
+            <pre>
+                &lt;!DOCTYPE html&gt;
+                    &lt;html&gt;
+                        &lt;head&gt;
+                            &lt;title&gt;My First Webiste!&lt;/title&gt;
+                            &lt;link type="text/css" rel="stylesheet" href="[your main website folder name]/[your css file name].css"&gt;
+                        &lt;/head&gt;
+                        <span class="codeHighlight">&lt;body&gt;
+                            &lt;h1&gt;My first heading!&gt;
+                            &lt;p&gt;My first paragraph!&gt;
+                        &lt;/body&gt;</span>
+                &lt;/html&gt;
+            </pre>
+            <p>As you can see, the <code>&lt;h1&gt;</code> tag is the heading tag. There are many heading tags ranging from 1 to 6. 1 being the biggest font size and 6 being the smallest. If you haven't guessed yet the <code>&lt;p&gt;</code> is the paragraph tag. Another thing you can try is using the <b>BOLD</b> and <em>EMPHASIS</em> tags on a word or sentence by using <code>&lt;b&gt;Bold text&lt;/b&gt;</code> and <code>&lt;em&gt;Text in italics&lt;/em&gt;</code>. Try it.</p>
+
+        <h2>Your first CSS script</h2>
+        <p>Your website right now looks bland. We can change that with the power of CSS. Lets change the background colour and font for our website. <b>Make sure you are typing out the code in your CSS file not in your HTML file!</b></p>
+        <pre>
+            body {
+                background: #73d625;
+                font-family: Helvetica;
+            }
+        </pre>
+        <p>As you can see, CSS has a way different syntax as HTML. The CSS code above tells the computer that <b>EVERYTHING</b> in the <code>&lt;body&gt;</code> tag that the whole website background will have a shade of green (<code>background: #73d625;</code>, you can use a colour picker to visualise hex or rgb colours) and all the text in it will have a "Helvetica" font which is same font used in this website.</p>
+
+        <h3>Id and Class</h3>
+        <p>Ids and Classes are very useful in HTML and CSS. Ids are used to define one specific element while Classes define multiple elements. Here is an example:</p>
+        <br>
+        <p><b>HTML:</b></p>
+        <pre>
+            &lt;!DOCTYPE html&gt;
+            &lt;html&gt;
+                &lt;head&gt;
+                    &lt;title&gt;My First Webiste!&lt;/title&gt;
+                    &lt;link type="text/css" rel="stylesheet" href="[your main website folder name]/[your css file name].css"&gt;
+                &lt;/head&gt;
+                &lt;body&gt;
+                    <span class="codeHighlight">&lt;h1 class="headingClass"&gt;My first heading!&gt;
+                    &lt;h1 class="headingClass"&gt;Another heading.&gt;
+                    &lt;h2 class="headingClass"&gt;A smaller heading...&gt;
+                    &lt;p id="paragraphID"&gt;My first paragraph!&gt;</span>
+                &lt;/body&gt;
+            &lt;/html&gt;
+        </pre>
+        <br>
+        <p><b>CSS:</b></p>
+        <pre>
+            body {
+                background: #73d625;
+                font-family: Helvetica;
+            }
+            <span class="codeHighlight">.headingClass {
+                background: black;
+                color: white;
+            }
+            #paragraphID {
+                color: red;
+            }</span>
+        </pre>
+        <p>In the HTML code, all the heading tags have a class selector called "headingClass" and the one paragraph tag has an Id selector called "paragraphID". In the CSS code, all class selectors start with a ".", while the Id selectors start with a "#". As we can see in the CSS code, all the tags with the <code>headingClass</code> class will have a black background and its text will have a white colour. Meanwhile, the paragraph tag with a <code>paragraphID</code> will have its text in red.</p>
+
+        <h1>Expand your knowledge</h1>
+        <p>The tutorial I provided to you above is just the basics. There are so many different HTML tags and CSS properties out there that you can use. You learn more in the "Resources" tab in the navigation bar above. </p>
+
+        <h1>How to host your website for FREE with Github Pages</h1>
+        <ol>
+            <li>Go to <a href="https://github.com/" taget="_blank">github.com</a></li>
+            <li>Create a GitHub account</li>
+            <li>Once you create an account, create a new REPOSITORY</li>
+            <li>Name your GitHub repository to "[Your Github Username].github.io"</li>
+            <li>Drag your website files to your repository</li>
+            <li>Go to your Repository's settings and find the "Github Pages" tab</li> 
+            <li>Once you found the tab, click the drop down box and choose the "master branch"</li>
+        </ol>
+        <p>If you still need help, try this tutorial: <a href="https://towardsdatascience.com/how-to-create-a-free-github-pages-website-53743d7524e1" target="_blank">LINK</a></p>
+        <p>In a few seconds or minutes, your website will be up for everyone to see in the World Wide Web. If you can tell, your website domain name is not exactly a custom one, so if you have some money (unlike me), you can purchase a domain name from <a href="https://www.namecheap.com/?msclkid=02aeea153d081e1db778889f4648019d&utm_source=bing&utm_medium=cpc&utm_campaign=Bing-NC-SearchAds-Brand-PureBrand-Exact-NEW&utm_term=cheap%20names&utm_content=SearchAds-Brand-PureBrand-Misspell-Exact" target="_blank">Name Cheap</a> or <a href="https://www.godaddy.com/en-ca/offers/godaddy?isc=cocagca001&countryview=1&currencyType=CAD&cdtl=c_396745476.g_1242448744702432.k_kwd-77653384861343:loc-32.a_.d_c.ctv_o&bnb=b&msclkid=ae66d0b63d261baf0d77b23c46a46a7a&utm_source=bing&utm_medium=cpc&utm_campaign=en-ca_corp-core_sem_bh_b_x_aware-consider_x_pros_intl_exact-skag_001&utm_term=godaddy&utm_content=%5Bgd%5D%20godaddy">GoDaddy</a> or something.</p>
+        <p><b>FUN FACT:</b> This is my 2nd time making a website from github</p>
+        </div>
+
+    </body>
+</html>

@@ -1,0 +1,139 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+a {
+    color: #5865F2;
+    text-decoration: none;
+    font-weight: bold;
+}
+a:hover {
+    text-decoration: underline;
+}
+body {
+    font-family: Helvetica;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(96, 44, 240);
+}
+  
+  nav li {
+    float: left;
+    display:inline;
+}
+  
+  nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+  
+  nav li a:hover {
+    background-color: #111;
+    text-decoration: none;
+}
+.codeHighlight {
+    background: red;
+    color: black;
+    font-weight: bold;
+    padding: 1px;
+}
+
+/* index.html */
+#home {
+    text-align: center;
+    top: 50%;
+    left: 50%;
+}
+#home h1 {
+    margin-top: 50px;
+    font-size: 100px;
+}
+#home p {
+    font-size: 25px;
+    padding:40px;
+}
+#home button {
+    padding: 30px;
+    background: rgb(96, 44, 240);
+    color: white;
+    border:solid 1px rgb(96, 44, 240);
+    border-radius: 6px;
+    font-size: 15px;
+    margin-bottom: 30px;
+}
+#home button a {
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+}
+
+/* learn.html */
+#learn {
+    margin: 50px;
+}
+#learn h1 {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding-left: 5px;
+    border-left: solid 7px rgb(96, 44, 240);
+}
+#learn h2 {
+    border-left: dotted 7px blue;
+    padding-left: 5px;
+    margin-left: 5px;
+}
+#learn p {
+    font-size: larger;
+    margin: 20px;
+    margin-bottom: 45px;
+}
+#learn ol li {
+    margin: 10px;
+    font-size: larger;
+}
+pre {
+    border: solid 3px black;
+    border-radius: 10px;
+    background: #424549;
+    color: yellow;
+    padding: 5px;
+    margin: 5px;
+}
+code {
+    border: solid 3px black;
+    border-radius: 3px;
+    background: #424549;
+    color: yellow;
+}
+
+/* resources.html */
+#resources {
+    margin: 50px;
+}
+#resources h1 {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding-left: 5px;
+    border-left: solid 7px rgb(96, 44, 240);
+}
+#resources h2 {
+    border-left: dotted 7px blue;
+    padding-left: 5px;
+    margin-left: 5px;
+}
+#resources p {
+    font-size: larger;
+    margin: 30px;
+}
+#resources ul {
+    margin-left: 40px;
+}
